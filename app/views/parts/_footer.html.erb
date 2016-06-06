@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-xs-4 left">
+     
+        <p>Place sticky footer content here.</p>
+    </div>
+  
+    <div class="col-md-4 col-xs-4 center">
+     <p>Created by <i>JustAnotherSmith</i></p>
+    </div>
+  
+    <div class="col-md-4 col-xs-4 right">
+        <% if admin_signed_in? %>
+     <li>
+     <%= link_to('Logout', destroy_admin_session_path, :method => :delete) %>        
+     </li>
+     <% else %>
+     <li>
+     <%= link_to('Login', new_admin_session_path)  %>  
+     </li>
+     <% end %>
+     </div>
+  </div>
+</div>

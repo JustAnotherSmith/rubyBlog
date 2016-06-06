@@ -1,0 +1,62 @@
+$yellow: #ff65D;
+$green: #7BC8A4;
+$blue:  #4CC3D9;
+$purple: #93648D;
+
+
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-size: 50px;
+	line-height: 70px;
+}
+
+p, small, li {
+	font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
+	font-size: 18px;
+	line-height: 25px;
+}
+
+body {
+	background-color: white;
+}
+
+.footer {
+	background-color: $blue; 
+	color: #ffffff;
+
+}
+
+
+
+
+.nav-row{
+	padding: 50px;
+	color: white;	
+	background-color: $purple;
+}
+
+
+
+.sidebar{
+	padding-top: 50px;
+}
+
+
+
+
+
+
+.title{
+	color: white;
+}
+
+.right{
+	text-align: right;
+}
+.left{
+	text-align: left;
+}
+.center{
+	text-align: center;
+}

@@ -1,0 +1,6 @@
+<h4>previous posts</h4>
+			<% @posts.each do |post| %>
+			<p><%= link_to post.title, post %></p>
+			<p><%= post.tag1 %></p>
+			<% end %>
+			

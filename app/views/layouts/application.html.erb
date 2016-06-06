@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<% unless notice.nil? %>
+<p class="notice"><%= notice %></p>
+<% end %>
+<% unless alert.nil? %>
+<p class="alert"><%= alert %></p>
+<% end %>
+
+
+<%= render 'parts/navBrand' %>
+<div class="container">
+<div class="row">
+			<div class="col-md-9">
+
+			
+			<%= yield %>
+			
+			
+			</div>
+			
+			<div class="col-md-3 sidebar">
+					
+			</div>
+		</div>
+
+</div>
+
+
+
+
+<%= render 'parts/footer' %>
+
+</body>
+</html>

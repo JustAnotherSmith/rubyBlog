@@ -1,0 +1,26 @@
+	
+		<div class="row">
+			<div class="col-md-9">
+
+			
+			<h2><%= @posts.first.title %></h2>
+			<p>#<%= @posts.first.tag1 %></p>
+			<small><%= @posts.first.created_at.strftime("%B %d, %Y") %></small>
+			<p><%= @posts.first.content %></p>
+			<hr/>
+			
+			
+			</div>
+			
+			<div class="col-md-3 sidebar">
+			<h4>previous posts</h4>
+			<% @posts.each do |post| %>
+			<p><%= link_to post.title, post %></p>
+			<p><%= post.tag1 %></p>
+			<% end %>
+			</div>
+		</div>
+
+	
+
+
